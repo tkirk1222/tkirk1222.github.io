@@ -8,17 +8,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
       padding: 0 0 0 10px;
     border-radius: 15px;
     background-color: #FFCC99; <!--#9999FF;--> <!-- #cc99ff;-->
-    animation-name: pushout;
-    animation-duration: 3s;
-    position: relative;
-  }
-     @keyframes pushout {
-       0%{
-         left: 0px;
-       }
-       100%{
-         left: 100px;
-       }
   }
   #myface {
     float: right;
@@ -30,6 +19,23 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
     font-family: arial;
     width: 26%;
     transform: skewY(-3deg);
+    animation-name: pushout;
+    animation-duration: 3s;
+    position: relative;
+  }
+       @keyframes pushout {
+       0%{
+         left: 0px;
+         top: 0px;
+       }
+         50%{
+           left: 10px;
+         top: 10px;         
+         }
+       100%{
+         left: 0px;
+         top: 0px;
+       }
   }
   p1::before{
     content: '';
