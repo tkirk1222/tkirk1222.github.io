@@ -8,7 +8,17 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
       padding: 0 0 0 10px;
     border-radius: 15px;
     background-color: #FFCC99; <!--#9999FF;--> <!-- #cc99ff;-->
-    
+    animation-name: pushout;
+    animation-duration: 3s;
+    position: relative;
+  }
+     @keyframes pushout {
+       0%{
+         left: 0px;
+       }
+       100%{
+         left: 100px;
+       }
   }
   #myface {
     float: right;
@@ -19,6 +29,17 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
     color: #006633;
     font-family: arial;
     width: 26%;
+    transform: skewY(-3deg);
+  }
+  p1::before{
+    content: '';
+    background-color: hsl(290, 17%, 41%);
+    border-radius: 50%;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 5px;
+    left: -12px;
   }
   .indent{
     position: relative;
